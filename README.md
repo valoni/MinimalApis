@@ -2,11 +2,11 @@
 
 Communicate with your DB via WEB API throught Minimal Web Api and Basic Authentication (you can change it , vay of authenticate and authorize..)
 
-how to use this web api examples and meanings :
+**how to use this web api examples and meanings :**  
 
 /* cancel authentication */  
 https://localhost:7202/api/pro/Get  
-TEST - hello worldt  
+TEST - hello world  
   
   
 /* show methods on swagger */  

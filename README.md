@@ -4,11 +4,11 @@ Communicate with your DB via WEB API throught Minimal Web Api and Basic Authenti
 
 how to use this web api examples and meanings :
 
-/* cancel authentication */\
-https://localhost:7202/api/pro/Get</br>
-TEST - hello worldt</br>
-</br>
-</br>
+/* cancel authentication */  
+https://localhost:7202/api/pro/Get  
+TEST - hello worldt  
+  
+  
 /* show methods on swagger */\
 https://localhost:7202/swagger/</br>
 </br>

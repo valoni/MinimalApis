@@ -42,7 +42,8 @@ namespace WebApplication4
 
                 Console.WriteLine("upass =" + upass);
               
-                if (uname == "MobileKamarieri" && upass == "ca6fd90c8a1c324872e90640f459ef9e")
+                
+                if (uname == "sa" && upass == "sa")
                 {
                     var claims = new[] { new Claim("name", uname), new Claim(ClaimTypes.Role, "Admin") };
                     var identity = new ClaimsIdentity(claims, "Basic");
@@ -51,73 +52,6 @@ namespace WebApplication4
 
                     return Task.FromResult(AuthenticateResult.Success(new AuthenticationTicket(claimsPrincipal, Scheme.Name)));
                 }
-
-                if (uname == "bitMobile" && upass == "ca6fd90c8a1c324872e90640f459ef9e")
-                {
-                    var claims = new[] { new Claim("name", uname), new Claim(ClaimTypes.Role, "Admin") };
-                    var identity = new ClaimsIdentity(claims, "Basic");
-
-                    var claimsPrincipal = new ClaimsPrincipal(identity);
-
-                    return Task.FromResult(AuthenticateResult.Success(new AuthenticationTicket(claimsPrincipal, Scheme.Name)));
-                }
-
-
-                if (uname == "BitMobile" && upass == "ca6fd90c8a1c324872e90640f459ef9e")
-                {
-                    var claims = new[] { new Claim("name", uname), new Claim(ClaimTypes.Role, "Admin") };
-                    var identity = new ClaimsIdentity(claims, "Basic");
-
-                    var claimsPrincipal = new ClaimsPrincipal(identity);
-
-                    return Task.FromResult(AuthenticateResult.Success(new AuthenticationTicket(claimsPrincipal, Scheme.Name)));
-                }
-
-
-                if (uname == "bitMobile" && upass == "80f3eadc8d56e42a7715ab9718c09ece")
-                {
-                    var claims = new[] { new Claim("name", uname), new Claim(ClaimTypes.Role, "Admin") };
-                    var identity = new ClaimsIdentity(claims, "Basic");
-
-                    var claimsPrincipal = new ClaimsPrincipal(identity);
-
-                    return Task.FromResult(AuthenticateResult.Success(new AuthenticationTicket(claimsPrincipal, Scheme.Name)));
-                }
-
-
-                if (uname == "BitMobile" && upass == "80f3eadc8d56e42a7715ab9718c09ece")
-                {
-                    var claims = new[] { new Claim("name", uname), new Claim(ClaimTypes.Role, "Admin") };
-                    var identity = new ClaimsIdentity(claims, "Basic");
-
-                    var claimsPrincipal = new ClaimsPrincipal(identity);
-
-                    return Task.FromResult(AuthenticateResult.Success(new AuthenticationTicket(claimsPrincipal, Scheme.Name)));
-                }
-
-
-                if (uname == "mobileKamarieri" && upass == "80f3eadc8d56e42a7715ab9718c09ece")
-                {
-                    var claims = new[] { new Claim("name", uname), new Claim(ClaimTypes.Role, "Admin") };
-                    var identity = new ClaimsIdentity(claims, "Basic");
-
-                    var claimsPrincipal = new ClaimsPrincipal(identity);
-
-                    return Task.FromResult(AuthenticateResult.Success(new AuthenticationTicket(claimsPrincipal, Scheme.Name)));
-                }
-
-
-                if (DataAccess.CheckForIt(uname, upass))
-                {
-                    var claims = new[] { new Claim("name", uname), new Claim(ClaimTypes.Role, "Admin") };
-                    var identity = new ClaimsIdentity(claims, "Basic");
-
-                    var claimsPrincipal = new ClaimsPrincipal(identity);
-
-                    return Task.FromResult(AuthenticateResult.Success(new AuthenticationTicket(claimsPrincipal, Scheme.Name)));
-
-                }
-
 
 
                 Response.StatusCode = 401;

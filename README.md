@@ -24,11 +24,11 @@ https://localhost:7202/api/pro/TableF/dbo.Employees/EmployeeId,FirstName,LastNam
   
 for other methodes you can check either Methods either Swagger to learn use and expand it ...  
   
-Valon Hoti  
-2023.10.08  
-Prishtine  
-Republic Of Kosova  
-valon.hoti@gmail.com  
+**Valon Hoti**    
+**2023.10.08**    
+**Prishtine**    
+**Republic Of Kosova**    
+**valon.hoti@gmail.com**    
   
 
 
